@@ -1,0 +1,157 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+    border-bottom: dotted gray 0.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: lavenderblush;
+}
+
+main {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin-left: -1rem;
+}
+
+p {
+    font-family: fantasy;
+}
+
+#user-inputs {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    background-color: rgba(118, 243, 16, 0.2);
+    padding-top: 6rem;
+    border-bottom: dotted gray 0.5rem;
+}
+
+.input-texts {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+#meme-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-fields {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-field p {
+    display: flex;
+    margin: 0.5%;
+    font-size: 1rem;
+}
+
+.text-field input {
+    display: flex;
+    width: 65%;
+    margin: 0.5%;
+    font-size: 1.5rem;
+}
+
+#submit-action {
+    display: flex;
+    width: 98%;
+    margin: 0.5%;
+    justify-content: right;
+}
+
+#submit-action button {
+    background-color: rgb(27, 187, 67);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    padding: 0.6rem;
+}
+
+#memes-generated {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.meme-output {
+    display: block;
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.meme-text {
+    position: absolute;
+    width: 85%;
+    color: white;
+    text-shadow: black;
+    font-size: 2rem;    
+    font-family: fantasy;
+    margin: 0.5rem;
+}
+
+.text-top {
+  top: 5%;
+  bottom: 80%;
+  text-align: left;
+}
+
+.text-bottom {
+    bottom: 5%;
+    text-align: right;
+}
+
+.meme-remove {
+    display: none;
+    position: absolute;
+    left: 95%;
+    bottom: 93%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.meme-output:hover .meme-remove {
+    display: block; 
+}
